@@ -95,9 +95,18 @@ body.lock {
 
 .wrapper {
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 0.45fr 1fr;
+    display:block;
+    
 }
+
+@media (min-width: 992px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 0.45fr 1fr;
+    }
+}
+
+
 
 .container {
     width: 1125px;
